@@ -3,16 +3,16 @@
 ## Code Testing Specifications
 
 Software required (With version): 
-Python(2.7)
-TensorFlow(1.10.1)
-Bazel(0.3.0)
-Pip(18.0)
-MatPlotlib(1.5.1)
-Pandas(0.18.1)
-NumPy(1.14.5)
+# Python(2.7)
+# TensorFlow(1.10.1)
+# Bazel(0.3.0)
+# Pip(18.0)
+# MatPlotlib(1.5.1)
+# Pandas(0.18.1)
+# NumPy(1.14.5)
 
-OS required:
-Linux Ubuntu 64 bit
+# OS required:
+MacOS High Sierra 10.13.6
 
 
 ## Related TensorFlow Books:
