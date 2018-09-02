@@ -4,12 +4,12 @@
 
 Software required (With version): 
 Python(2.7)
-TensorFlow(0.7)
+TensorFlow(1.10.1)
 Bazel(0.3.0)
-Pip(8.1.2)
+Pip(18.0)
 MatPlotlib(1.5.1)
 Pandas(0.18.1)
-NumPy(1.11.0)
+NumPy(1.14.5)
 
 OS required:
 Linux Ubuntu 64 bit
