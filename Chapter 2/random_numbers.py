@@ -45,8 +45,6 @@ with tf.Session() as second_session:
     print("uniform without seed = {}"
           .format(second_session.run(uniform_without_seed)))
 
-import tensorflow as tf
-
 trials = 100
 hits = 0
 x = tf.random_uniform([1], minval=-1, maxval=1, dtype=tf.float32)
