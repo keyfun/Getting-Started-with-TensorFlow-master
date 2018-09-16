@@ -8,6 +8,7 @@ mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
 train_pixels, train_list_values = mnist.train.next_batch(100)
 test_pixels, test_list_of_values = mnist.test.next_batch(10)
 
+# 28 * 28 = 784 (calculate by pixel)
 train_pixel_tensor = tf.placeholder("float", [None, 784])
 test_pixel_tensor = tf.placeholder("float", [784])
 
