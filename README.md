@@ -21,7 +21,10 @@
 
 
 MacOS command:
-sudo pip install --ignore-installed tensorflow
+```
+pip install --ignore-installed tensorflow
+pip install pandas
+```
 
 Update:
 tf.mul, tf.sub and tf.neg are deprecated in favor of tf.multiply, tf.subtract and tf.negative.
