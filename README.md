@@ -3,7 +3,7 @@
 ## Code Testing Specifications
 
 ### Software required (With version): 
-- Python(2.7)
+- Python(3.7)
 - TensorFlow(1.10.1)
 - Bazel(0.3.0)
 - Pip(18.0)
