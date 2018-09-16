@@ -35,7 +35,7 @@ for i in range(num_vectors):
         x_values.append(np.random.normal(0.6, 0.4))
         y_values.append(np.random.normal(0.8, 0.5))
 
-vector_values = zip(x_values, y_values)
+vector_values = list(zip(x_values, y_values))
 vectors = tf.constant(vector_values)
 
 n_samples = tf.shape(vector_values)[0]
@@ -64,7 +64,7 @@ partitions = tf.dynamic_partition(vectors, assignments, num_clusters)
 
 update_centroids = tf.concat(0, [tf.expand_dims(tf.reduce_mean(partition, 0), 0) for partition in partitions])
 
-init_op = tf.initialize_all_variables()
+init_op = tf.global_variables_initializer()
 
 sess = tf.Session()
 sess.run(init_op)
