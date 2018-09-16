@@ -25,16 +25,14 @@ cost_function = tf.reduce_mean(tf.square(y - y_point))
 optimizer = tf.train.GradientDescentOptimizer(0.5)
 train = optimizer.minimize(cost_function)
 
-model = tf.initialize_all_variables()
+model = tf.global_variables_initializer()
 
 with tf.Session() as session:
     session.run(model)
     for step in range(0, 21):
         session.run(train)
         if (step % 5) == 0:
-            plt.plot(x_point, y_point,
-                     'o', label='step = {}'.format(step))
-            plt.plot(x_point,
-                     session.run(A) * x_point + session.run(B))
+            plt.plot(x_point, y_point, 'o', label='step = {}'.format(step))
+            plt.plot(x_point, session.run(A) * x_point + session.run(B))
             plt.legend()
             plt.show()
