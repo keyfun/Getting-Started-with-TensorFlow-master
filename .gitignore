@@ -3,3 +3,4 @@ env
 .vscode
 python.code-workspace
 Chapter 3/MNIST_data
+.idea
